@@ -4,25 +4,34 @@
 #
 Name     : R-viridis
 Version  : 0.5.1
-Release  : 16
+Release  : 17
 URL      : https://cran.r-project.org/src/contrib/viridis_0.5.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/viridis_0.5.1.tar.gz
 Summary  : Default Color Maps from 'matplotlib'
 Group    : Development/Tools
 License  : MIT
-Requires: R-RColorBrewer
-Requires: R-cli
-Requires: R-dichromat
-Requires: R-ggplot2
-Requires: R-gridExtra
-Requires: R-rasterVis
-Requires: R-viridisLite
+Requires: R-gtable
+Requires: R-httr
+Requires: R-labeling
+Requires: R-lazyeval
+Requires: R-munsell
+Requires: R-plyr
+Requires: R-scales
+Requires: R-tibble
 BuildRequires : R-RColorBrewer
 BuildRequires : R-cli
 BuildRequires : R-dichromat
 BuildRequires : R-ggplot2
 BuildRequires : R-gridExtra
+BuildRequires : R-gtable
+BuildRequires : R-httr
+BuildRequires : R-labeling
+BuildRequires : R-lazyeval
+BuildRequires : R-munsell
+BuildRequires : R-plyr
 BuildRequires : R-rasterVis
+BuildRequires : R-scales
+BuildRequires : R-tibble
 BuildRequires : R-viridisLite
 BuildRequires : buildreq-R
 
@@ -37,10 +46,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552838570
+export SOURCE_DATE_EPOCH=1552920137
 
 %install
-export SOURCE_DATE_EPOCH=1552838570
+export SOURCE_DATE_EPOCH=1552920137
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
