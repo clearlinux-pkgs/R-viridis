@@ -1,6 +1,7 @@
 # This file contains recursive sources that require this package
 R-DendSer
 R-Hmisc
+R-corrgram
 R-cowplot
 R-dendextend
 R-gbm
@@ -8,3 +9,4 @@ R-ggridges
 R-leaflet
 R-pdp
 R-phylogram
+R-seriation
