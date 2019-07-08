@@ -4,29 +4,19 @@
 #
 Name     : R-viridis
 Version  : 0.5.1
-Release  : 23
+Release  : 24
 URL      : https://cran.r-project.org/src/contrib/viridis_0.5.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/viridis_0.5.1.tar.gz
 Summary  : Default Color Maps from 'matplotlib'
 Group    : Development/Tools
 License  : MIT
-Requires: R-httr
-Requires: R-scales
+Requires: R-ggplot2
+Requires: R-gridExtra
+Requires: R-rasterVis
 Requires: R-viridisLite
-BuildRequires : R-RColorBrewer
-BuildRequires : R-cli
-BuildRequires : R-dichromat
 BuildRequires : R-ggplot2
 BuildRequires : R-gridExtra
-BuildRequires : R-gtable
-BuildRequires : R-httr
-BuildRequires : R-labeling
-BuildRequires : R-lazyeval
-BuildRequires : R-munsell
-BuildRequires : R-plyr
 BuildRequires : R-rasterVis
-BuildRequires : R-scales
-BuildRequires : R-tibble
 BuildRequires : R-viridisLite
 BuildRequires : buildreq-R
 
@@ -40,13 +30,13 @@ BuildRequires : buildreq-R
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1561773855
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1562620904
 
 %install
-export SOURCE_DATE_EPOCH=1561773855
+export SOURCE_DATE_EPOCH=1562620904
 rm -rf %{buildroot}
-export LANG=C
+export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -75,7 +65,7 @@ R CMD INSTALL --preclean --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} 
 cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0

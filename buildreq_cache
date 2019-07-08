@@ -1,16 +1,2 @@
 0.5.1
-R-RColorBrewer
-R-cli
-R-dichromat
-R-ggplot2
-R-gridExtra
-R-gtable
-R-httr
-R-labeling
-R-lazyeval
-R-munsell
-R-plyr
 R-rasterVis
-R-scales
-R-tibble
-R-viridisLite
