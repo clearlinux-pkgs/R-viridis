@@ -1,5 +1,7 @@
 # This file contains recursive sources that require this package
+R-DiagrammeR
 R-Hmisc
 R-dendextend
 R-leaflet
+R-mstate
 R-pdp
