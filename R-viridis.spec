@@ -5,7 +5,7 @@
 #
 Name     : R-viridis
 Version  : 0.6.4
-Release  : 53
+Release  : 54
 URL      : https://cran.r-project.org/src/contrib/viridis_0.6.4.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/viridis_0.6.4.tar.gz
 Summary  : Colorblind-Friendly Color Maps for R
